@@ -63,14 +63,14 @@ class Cart extends React.Component {
     }
   }
   
-  Cart.propTypes = {
-    title: PropTypes.string,
-    description: PropTypes.string
-  };
+  // Cart.propTypes = {
+  //   title: PropTypes.string,
+  //   description: PropTypes.string
+  // };
   
-  Cart.defaultProps = {
-    title: 'cart-solution',
-    description: 'A gasket cart app'
-  };
+  // Cart.defaultProps = {
+  //   title: 'cart-solution',
+  //   description: 'A gasket cart app'
+  // };
   
   export default Cart;

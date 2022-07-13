@@ -55,3 +55,17 @@ a {
 a:visited {
   color: #ccab82;
 }
+
+.center-image{
+  display:flex;
+  justify-content: center; /* horizontally center */
+  align-items: center;    /* vertically center */
+  height:600px;
+  width:700px;
+  background: #e6d6c2;
+}
+
+.center-image img{
+ max-width:100%;
+ max-height:100%;
+}

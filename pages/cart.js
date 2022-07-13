@@ -8,16 +8,23 @@ import Cart from '../components/CartList'
 export const CartPage = () => (
   <Container>
     <Head title='Cart'/>
-    <div>
-      <Typography variant="h3"> My Cart </Typography>
-    </div>
-    <h2>Cart Items</h2>
+    <header className="row block center">
+      <div>
+        <a href="#/">
+          <p>My Cart</p>
+        </a>
+      </div>
 
     <div>
-      <Link href="/shop">
-        <a>View Shop</a>
-      </Link>
+      <a href="/shop">View Shop</a> 
     </div>
+    </header>
+
+    <br/>
+    <main className="block col-1">
+      <h2>Cart Items</h2>
+    </main>
+
     <br/>
 
     <div>
