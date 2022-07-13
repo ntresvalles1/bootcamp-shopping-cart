@@ -5,7 +5,7 @@ import Head from '../components/head';
 export const IndexPage = () => (
   <div>
     <Head title='Home'/>
-    <h1>Welcome!</h1>
+    <h1>Hello World!</h1>
   </div>
 );
 
