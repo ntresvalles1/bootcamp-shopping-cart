@@ -14,6 +14,9 @@ export const ShopPage = () => (
     <header className="row block center">
       <div>
         <a href="#/">
+        {/* <img 
+        src="https://cdn.shopify.com/s/files/1/0605/6997/7058/collections/6_1200x800.jpg?v=1639469846"
+        /> */}
           <p>Sell Again and Again</p>
         </a>
       </div>
@@ -23,6 +26,11 @@ export const ShopPage = () => (
     </div>
     </header>
 
+    <div class ="center-image">
+      <img 
+        src="https://cdn.shopify.com/s/files/1/0605/6997/7058/collections/6_1200x800.jpg?v=1639469846"
+      />
+    </div>
 
     <br/>
     <main className="block col-1">
