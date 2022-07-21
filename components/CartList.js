@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Typography } from '@material-ui/core'
+import { Grid, Typography, CardActions, Button, Card, CardContent, CardMedia  } from '@material-ui/core'
 import CartItem from './CartItem';
 
 class Cart extends React.Component {
@@ -30,13 +30,11 @@ class Cart extends React.Component {
     }
   
     render() {
-      const totalPrice = this.state.cartItems
-        .map(item => item.quantity * item.price)
-        .reduce((a, b) => a + b, 0)
-  
+      const total = this.state.cartItems.map(item => item.quantity * item.price).reduce((a, b) => a + b, 0)
+
       return (
         <div>
-          <Grid container direction="row" spacing={1}>
+          <Grid container direction="row" spacing={3}>
             {this.state.cartItems.map(item =>
               <Grid item sm>
                 <CartItem
@@ -53,24 +51,21 @@ class Cart extends React.Component {
               </Grid>
             )}
           </Grid>
-          <div style={{"padding-top": "20px"}}>
+          <br/>
+          <div>
             <Typography variant="h5">
-              Total: ${totalPrice}
+              Total: ${total}
             </Typography>
+          </div>
+          <div>
+              <Button 
+                style={{backgroundColor: "#F8E7D1"}} align-items="center" variant="contained" >
+                  Checkout
+              </Button>
           </div>
         </div>
       );
     }
   }
   
-  // Cart.propTypes = {
-  //   title: PropTypes.string,
-  //   description: PropTypes.string
-  // };
-  
-  // Cart.defaultProps = {
-  //   title: 'cart-solution',
-  //   description: 'A gasket cart app'
-  // };
-  
-  export default Cart;
+export default Cart;

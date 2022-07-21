@@ -1,8 +1,8 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #faedcd;
   color: rgb(0, 0, 0);
-  font-family: 'Times New Roman', Times, serif;
-
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: 'Aleo', serif;
 }
 p {
   font-family: cursive;
@@ -43,7 +43,7 @@ a {
   flex: 2;
 }
 .block {
-  background-color: #ebdecf;
+  background-color: #ccd5ae;
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 0.5rem;
@@ -53,19 +53,32 @@ a {
 }
 
 a:visited {
-  color: #ccab82;
+  color: #343631;
 }
 
 .center-image{
   display:flex;
   justify-content: center; /* horizontally center */
-  align-items: center;    /* vertically center */
-  height:600px;
-  width:700px;
-  background: #e6d6c2;
+  align-items: center; 
+  margin: auto;   /* vertically center */
+  height:700px;
+  width:800px;
+  background: #ccd5ae;
 }
 
 .center-image img{
  max-width:100%;
  max-height:100%;
+}
+
+.cartIcon{
+  font-size: 25px;
+}
+.shopTitle{
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+}
+.shopProductHeader{
+  font-size: 30px;
+  font-family: 'Aleo', serif;
 }
